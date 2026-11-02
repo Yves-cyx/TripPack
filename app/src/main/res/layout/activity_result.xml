@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="出发前的最后一遍" android:textSize="26sp" android:textColor="#19352F" android:layout_marginBottom="10dp" android:textStyle="bold"/>
+    <TextView android:id="@+id/summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/card" android:textSize="17sp" android:textColor="#19352F" android:lineSpacingExtra="5dp"/>
+    <TextView android:id="@+id/progress_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:textSize="15sp" android:textColor="#167567"/>
+    <ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="12dp" android:layout_marginTop="6dp" android:max="100"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="点按勾选已装包 · 长按删除物品" android:textSize="12sp" android:textColor="#19352F" android:layout_marginBottom="10dp" android:layout_marginTop="10dp"/>
+    <ListView android:id="@+id/items" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:choiceMode="multipleChoice" android:divider="#E2E9E4" android:dividerHeight="1dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+        <EditText android:id="@+id/custom_item" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:singleLine="true" android:maxLength="30" android:inputType="text" android:hint="补充一件物品"/>
+        <Button android:id="@+id/add" android:layout_width="76dp" android:layout_height="48dp" android:text="添加"/>
+    </LinearLayout>
+    <Button android:id="@+id/back" android:layout_width="match_parent" android:layout_height="48dp" android:text="保存并返回"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="陈翊轩  |  2406100303" android:textSize="13sp" android:textColor="#19352F" android:layout_marginBottom="10dp" android:gravity="center" android:layout_marginTop="12dp"/>
+</LinearLayout>
